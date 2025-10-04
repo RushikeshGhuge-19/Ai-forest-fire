@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     try {
       const backendURL = req.headers.host.includes('localhost')
         ? 'http://localhost:5001/predict' 
-        : 'https://forestfire-ai.onrender.com/predict'; 
+        : 'https://ai-forest-fire.onrender.com/predict'; 
 
       const response = await fetch(backendURL, {
         method: 'POST',
